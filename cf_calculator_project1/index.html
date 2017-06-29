@@ -1,0 +1,58 @@
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Calculator</title>
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css/styles.css">
+  </head>
+
+  <body>
+
+  	<div class="calculator">
+  		<form>
+	  			<input type="text" class="screen" id="screen"> <br>
+
+	  			<input type="button" class="key" value="c" onclick="addtoscreen('c')">
+	  			<input type="button" class="key" value="<-" onclick="backspace()">
+	  			<input type="button" class="key" value="X^3" onclick="power(3)">
+	  			<input type="button" class="key" value="/" onclick="addtoscreen('/')"> 	  			
+					<br>
+
+	  			<input type="button" class="key" value="7" onclick="addtoscreen('7')">
+	  			<input type="button" class="key" value="8" onclick="addtoscreen('8')">
+	  			<input type="button" class="key" value="9" onclick="addtoscreen('9')">
+	  			<input type="button" class="key" value="*" onclick="addtoscreen('*')"> 
+	  			<br>
+
+	  			<input type="button" class="key" value="4" onclick="addtoscreen('4')">
+	  			<input type="button" class="key" value="5" onclick="addtoscreen('5')">
+	  			<input type="button" class="key" value="6" onclick="addtoscreen('6')">
+	  			<input type="button" class="key" value="-" onclick="addtoscreen('-')"> 
+	  			<br>
+
+	  			<input type="button" class="key" value="1" onclick="addtoscreen('1')">
+	  			<input type="button" class="key" value="2" onclick="addtoscreen('2')">
+	  			<input type="button" class="key" value="3" onclick="addtoscreen('3')">
+	  			<input type="button" class="key" value="+" onclick="addtoscreen('+')">	
+	  			<br>
+
+	  			<input type="button" class="key" value="0" onclick="addtoscreen('0')">
+	  			<input type="button" class="key" value="." onclick="addtoscreen('.')">
+	  			<input type="button" class="equal key" value="=" onclick="answer()">
+	  			
+	  	</form>
+	  </div>
+
+	  <script src="scripts.js/scripts.js"></script>
+
+  </body>
+
+</html>
